@@ -81,33 +81,49 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
 
-*๏ ᴛʜɪs ɪs* {} !
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+────「 [Daisy Robot](https://telegra.ph/file/a9814904340a6f4a994eb.jpg) 」────
+ʜᴇʏ! {}
+ɪ ᴀᴍ Lyra Robot ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+I have lots of handy features such as:
+‣ Warning system
+‣ Artificial intelligence
+‣ Flood control system
+‣ Note keeping system
+‣ Filters keeping system
+‣ Approvals and much more.
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs ××
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜ ɢᴇʏ",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        ),
+            text="🥀 Add To Your Group 🥀", url="t.me/DaisyXRobot?startgroup=new"),
+    ],
+    [                  
+                       InlineKeyboardButton(
+                             text="Support🔥",
+                             url=f"https://t.me/The_Alone_Network"),
+                       InlineKeyboardButton(
+                             text="Updates📣",
+                             url=f"https://t.me/The_Alone_Network"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(
+              text="Help",
+              callback_data="help_back"),
+        InlineKeyboardButton(
+              text="About",
+              callback_data="misslyra_"),   
     ],
     [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="fallen_"),
-        InlineKeyboardButton(text="✨ sᴜᴩᴩᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(
+            text="Donate 🌹", 
+            callback_data="Daisy_donate"),
     ],
-    [
-        InlineKeyboardButton(text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="☁️ sᴏᴜʀᴄᴇ ☁️", callback_data="source_"),
-    ],
+
 ]
 
 HELP_STRINGS = f"""
